@@ -36,7 +36,7 @@ public class ServiceMobileWallet implements IServiceMobileWallet {
 		//Si es una transacción en donde el que transfiere y el destinatario poseen una tarjeta de debito asociado.
 		if(mobileWallet.getType().equals("TCD")&&mobileWallet.toMessageTransactWallet().getNumber_destination().isEmpty())
 			return mobileWalletdao.findById(mobileWallet.getId())
-					.map(value-> value.withDrawals(mobileWallet.toMessageTransactWallet().getAmount()))
+					.map(value-> value)
 					.flatMap(mobileWalletdao::save)
 					.doOnSuccess(value->{
 						var resultsavehistory = historyMovilWalletdao.save(value.toMobileWalletRedis());

@@ -37,13 +37,13 @@ public StatusDataEventRedis toStatusDataEventRedis() {
 public String toString() {
 	// TODO Auto-generated method stub
 	return "{\r\n"
-			+ "    \"id\": "+this.id+",\r\n"
-			+ "    \"iddetail\": "+this.idTransact+",\r\n"
-			+ "    \"amount\": "+this.amount+",\r\n"
-			+ "    \"iddetail\": "+this.iddetail+",\r\n"
-			+ "    \"destination\": "+this.number_destination+",\r\n"
-			+ "    \"destination\": "+this.destination+",\r\n"
-			+ "    \"status\": "+this.status+"\r\n"
+			+ "    \"id\": \""+this.id+"\",\r\n"
+			+ "    \"iddetail\": \""+this.idTransact+"\",\r\n"
+			+ "    \"amount\": \""+this.amount+"\",\r\n"
+			+ "    \"iddetail\": \""+this.iddetail+"\",\r\n"
+			+ "    \"destination\": \""+this.number_destination+"\",\r\n"
+			+ "    \"destination\": \""+this.destination+"\",\r\n"
+			+ "    \"status\": \""+this.status+"\"\r\n"
 			+ "}";
 }
 
