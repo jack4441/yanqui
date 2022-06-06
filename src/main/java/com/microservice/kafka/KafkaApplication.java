@@ -90,6 +90,11 @@ public class KafkaApplication {
 	
 	//Creando topics(temas)
 	@Bean
+	NewTopic transferYanquiBootcoin() {
+		return TopicBuilder.name("transferYanquiBootcoin").partitions(15).replicas(3).build();
+	}
+	
+	@Bean
 	NewTopic transferWallet() {
 		return TopicBuilder.name("transferWallet").partitions(15).replicas(3).build();
 	}

@@ -18,7 +18,7 @@ import lombok.ToString;
 @NoArgsConstructor
 @Builder
 @ToString
-public class StatusDataEventRedis implements Serializable{
+public class StatusDataEventRedis implements Serializable {
 
 private static final long serialVersionUID = -6364922020267688348L;
 

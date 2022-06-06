@@ -23,12 +23,14 @@ private String iddetail;
 private String number_destination;
 private String destination;
 private String status;
+private String mobile_buyer;
+private String mobile_seller;
 
 public StatusDataEventRedis toStatusDataEventRedis() {
 	return StatusDataEventRedis.builder()
 			.id(this.id)
 			.idTransact(this.idTransact)
-			.typeEvent("TransactWallet")
+			.typeEvent("TransactBootcoin")
 			.status(this.status)
 			.build();
 }
@@ -38,10 +40,12 @@ public String toString() {
 	// TODO Auto-generated method stub
 	return "{\r\n"
 			+ "    \"id\": \""+this.id+"\",\r\n"
-			+ "    \"iddetail\": \""+this.idTransact+"\",\r\n"
+			+ "    \"idTransact\": \""+this.idTransact+"\",\r\n"
 			+ "    \"amount\": \""+this.amount+"\",\r\n"
 			+ "    \"iddetail\": \""+this.iddetail+"\",\r\n"
-			+ "    \"destination\": \""+this.number_destination+"\",\r\n"
+			+ "    \"mobile_buyer\": \""+this.mobile_buyer+"\",\r\n"
+			+ "    \"mobile_seller\": \""+this.mobile_seller+"\",\r\n"
+			+ "    \"number_destination\": \""+this.number_destination+"\",\r\n"
 			+ "    \"destination\": \""+this.destination+"\",\r\n"
 			+ "    \"status\": \""+this.status+"\"\r\n"
 			+ "}";

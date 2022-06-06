@@ -24,6 +24,8 @@ public MessageTransactWallet toMessageTransactWallet() {
 			.idTransact(UUID.randomUUID().toString())
 			.amount(messageTransactWallet.getAmount())
 			.iddetail(messageTransactWallet.getIddetail())
+			.mobile_buyer("")
+			.mobile_seller("")
 			.number_destination(messageTransactWallet.getNumber_destination())
 			.destination(messageTransactWallet.getDestination())
 			.status("Process")
